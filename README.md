@@ -1,4 +1,4 @@
-flex-image
-==========
+## Flex Image
 
-Sass/Compass mixin for responsive spritesheets
+### Responsive spritesheets with Sass and Compass
+
