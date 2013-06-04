@@ -42,5 +42,16 @@ Example:
 	
 Check out the example demo for more information.
 
+## Outputted values
+
+Here is an example of what the outputted values look like:
+
+	.elem {
+	    width: 99.53704%;
+	    padding-top: 100%;
+	    background-size: 100.46512% 1006.48148%;
+	    background-position: 0 55.51583%;
+	}
+
 ## Credits
  [The icons in the example demo are by Julian Hrankov.](http://dribbble.com/shots/676411-Free-Vintage-Icon-Set-gif)
