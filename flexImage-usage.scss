@@ -1,8 +1,0 @@
-.toogle {
-	@extend .ui-main-btn-nav-1;
-	@include flexImage(640, 80, 84, btn-nav-1, $ui-main-sprites);
-
-	&:active {
-		@extend .ui-main-btn-nav-2;
-	}
-}

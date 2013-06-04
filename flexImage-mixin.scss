@@ -1,9 +1,4 @@
-// Flexible elements with background images using a sprite.
-// Sprite must be a compass magic sprite
-// No units should be defined for $containerWidth, $elemWidth and $elemHeight
-// File name is the name of the image without its extension (e.g. myicon.png >>> myicon)
-// $fullSpriteName should be the name to access the entire sprite e.g $my-icons-sprites or $icons-sprites
-// If a sprite is normally referred to as $sprite-name, you can access the entire sprite using $sprite-name-sprites
+
 @mixin flexImage( $containerWidth, $elemWidth, $elemHeight, $fileName, $fullSpriteName  ) {
 	$spriteWidth: strip-units( image-width(sprite-path($fullSpriteName)) );
 	$spriteHeight: strip-units( image-height(sprite-path($fullSpriteName)) );
