@@ -42,3 +42,5 @@ Example:
 	
 Check out the example demo for more information.
 
+## Credits
+ [The icons in the example demo are by Julian Hrankov.](http://dribbble.com/shots/676411-Free-Vintage-Icon-Set-gif)
