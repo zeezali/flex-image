@@ -8,6 +8,8 @@ Flexible elements with background images using a sprite.
 
 This mixin allows you to use sprites with flexible elements. In other words the sprite responds with the element.
 
+[Demo](http://zeezali.github.io/flex-image/)
+
 
 ## Requirements
 
