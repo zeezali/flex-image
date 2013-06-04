@@ -1,0 +1,157 @@
+
+
+// Import normalize
+@import "normalize";
+
+// Import CSS3 Mixins
+@import "compass/css3";
+
+
+// Fleximage mixin
+
+// Remove units and return val
+// http://stackoverflow.com/questions/10756928/getting-only-x-or-y-position-from-sprite-in-compass
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@mixin flexImage( $containerWidth, $elemWidth, $elemHeight, $fileName, $fullSpriteName  ) {
+	$spriteWidth: strip-units( image-width(sprite-path($fullSpriteName)) );
+	$spriteHeight: strip-units( image-height(sprite-path($fullSpriteName)) );
+	$offsetX: abs( strip-units( nth(sprite-position($fullSpriteName, $fileName), 1) ) );
+	$offsetY: abs( strip-units( nth(sprite-position($fullSpriteName, $fileName), 2) ) );
+	$bgWidth: percentage( $spriteWidth / $elemWidth );
+	$bgHeight: percentage( $spriteHeight / $elemHeight );
+	$bgOffsetX: null;
+	$bgOffsetY: null;
+
+	@if $offsetX == 0 {
+		$bgOffsetX: 0;
+	} @else {
+		$bgOffsetX: percentage( $offsetX / ( $spriteWidth - $elemWidth ) );
+	}
+	
+	@if $offsetY == 0 {
+		$bgOffsetY: 0;
+	} @else {
+		$bgOffsetY: percentage( $offsetY / ( $spriteHeight - $elemHeight ) );
+	}
+
+	width: percentage( $elemWidth / $containerWidth );
+	padding-top: percentage( $elemHeight / $containerWidth );
+	background-size: $bgWidth $bgHeight;
+	background-position: $bgOffsetX $bgOffsetY;
+}
+
+
+
+
+// Configure the sprite
+$ui-icons-spacing: 2px;
+@import "ui-icons/*.png";
+@include all-ui-icons-sprites;
+
+
+* {
+	@include box-sizing( border-box );
+}
+
+body {
+	background: #FFFDEE;
+}
+
+.removeText {
+	display: block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	line-height: 0;
+}
+
+.legacyClearfix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+
+#wrapper {
+	max-width: 43.75em; // 700px
+	margin: 0 auto;
+}
+
+.intro {
+	padding: 10% 5% 5%;
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 1.375em;
+		color: rgb(49, 49, 49);
+	}
+
+	h3 {
+		font-size: 0.875em;
+		color: rgb(49, 49, 49);
+	}
+
+	p {
+		font-size: 0.9375em;
+		margin: 1.666666667em 0 0;
+	}
+}
+
+
+.col {
+	width: 35.142857143%;	// 246 / 700
+	padding: 0 2.142857143%; // 15 / 700
+	text-align: center;
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 1.125em;
+		margin-bottom: 1.666666667em;
+		color: rgb(231, 123, 124);
+	}
+}
+
+.col.one {
+	float: left;
+}
+
+.col.two {
+	float: right; 
+}
+
+
+.sprite {
+	@extend .removeText;
+	@extend .ui-icons-sprite;
+	$spritePath: sprite-path( $ui-icons-sprites );
+	$width: strip-units( image-width( $spritePath ) );
+	$height: strip-units( image-height( $spritePath ) );
+	width: $width;
+	height: $height;
+	@include flexImage( 216, $width, $height, pipe, $ui-icons-sprites );
+	// width: image-width( $spritePath );
+	// height: image-height( $spritePath );
+}
+
+.elem {
+	@extend .removeText;
+	@extend .ui-icons-pipe;
+	@include flexImage( 216, 215, 216, pipe, $ui-icons-sprites );
+	// width: ui-icons-sprite-width( pipe );
+	// height: ui-icons-sprite-height( pipe );
+}
+
+
+
+
+
+
+
+

@@ -1,4 +1,10 @@
 
+// Remove units and return val
+// http://stackoverflow.com/questions/10756928/getting-only-x-or-y-position-from-sprite-in-compass
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
 @mixin flexImage( $containerWidth, $elemWidth, $elemHeight, $fileName, $fullSpriteName  ) {
 	$spriteWidth: strip-units( image-width(sprite-path($fullSpriteName)) );
 	$spriteHeight: strip-units( image-height(sprite-path($fullSpriteName)) );
