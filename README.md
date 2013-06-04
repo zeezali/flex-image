@@ -10,6 +10,9 @@ This mixin allows you to use sprites with flexible elements. In other words the 
 
 
 ### Requirements
+
+Sass  
+Compass  
 Sprite must be generated using the compass magic sprite method
 
 ### Usage
