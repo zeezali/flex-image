@@ -1,21 +1,28 @@
-## Flex Image
+# Flex Image
 
 ***
 
-### Responsive spritesheets with Sass and Compass
+## Responsive spritesheets with Sass and Compass
 
 Flexible elements with background images using a sprite.  
 
 This mixin allows you to use sprites with flexible elements. In other words the sprite responds with the element.
 
 
-### Requirements
+## Requirements
 
 Sass  
 Compass  
 Sprite must be generated using the compass magic sprite method
 
-### Usage
+## Setting up the Sprite using Compass
+
+	$ui-main-spacing: 2px; // Doesn't work with smart layout
+
+This particular set up does not work with ‘smart’ sprite layouts. This is because the sprite doesn’t respond 100% accurately so we have to make sure there is a little buffer between each image in the sprite. We’re just accounting for the small margin of error that may occur when a sprite scales down. You can increase the spacing value to whatever you like.
+
+
+## Usage
 
 	@include flexImage( $containerWidth, $elemWidth, $elemHeight, filename, $fullSpriteName );
 
