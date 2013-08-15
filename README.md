@@ -56,4 +56,4 @@ Here is an example of what the outputted values look like:
 	}
 
 ## Credits
- [The icons in the example demo are by Julian Hrankov.](http://dribbble.com/shots/676411-Free-Vintage-Icon-Set-gif)
+ [The icons in the example demo are by Vlad Chernushevich.](http://dribbble.com/shots/1163510-hicons-free-outline-icons)
