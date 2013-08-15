@@ -1,3 +1,4 @@
+/* Import normalize */
 /* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -367,48 +368,247 @@ table {
   border-spacing: 0;
 }
 
-.ui-icons-sprite, .ui-icons-anchor-1, .ui-icons-anchor-2, .ui-icons-chemistry, .ui-icons-chess-1, .ui-icons-chess-2, .ui-icons-glasses, .ui-icons-mic-1, .ui-icons-mic-2, .ui-icons-movie, .ui-icons-pipe, .elem, .sprite {
-  background: url('ui-icons-s331ad1597c.png') no-repeat;
+/* Import CSS3 Mixins */
+/* Remove units and return val */
+/* Fleximage mixin */
+.ui-icons-sprite, .ui-icons-arrow, .ui-icons-camera, .camera, .ui-icons-chat, .ui-icons-check, .ui-icons-clip, .ui-icons-close, .ui-icons-cloud, .ui-icons-cog, .ui-icons-cyclist, .ui-icons-dots, .ui-icons-download, .ui-icons-enter-fullscreen, .ui-icons-envelope, .envelope, .ui-icons-exit-fullscreen, .ui-icons-eye-closed, .ui-icons-eye, .ui-icons-hamburger, .ui-icons-heart, .ui-icons-house, .ui-icons-list, .ui-icons-loading-messages, .ui-icons-lock-open, .ui-icons-lock-unlocked, .ui-icons-lock, .ui-icons-minus, .ui-icons-mirophone, .ui-icons-moon-with-clouds, .ui-icons-moon, .ui-icons-mute, .ui-icons-new-chat-message, .ui-icons-new-message, .ui-icons-next, .ui-icons-paper-plane, .ui-icons-pause, .ui-icons-pencil, .ui-icons-pin, .ui-icons-pins, .ui-icons-plane, .ui-icons-play, .ui-icons-plus, .ui-icons-previous, .ui-icons-rain, .ui-icons-refresh, .ui-icons-repeat, .ui-icons-shuffle, .ui-icons-snow, .ui-icons-star, .ui-icons-storm, .storm, .ui-icons-sun-with-clouds, .ui-icons-sun, .ui-icons-sync, .ui-icons-thumb-down, .ui-icons-thumb-up, .ui-icons-trash, .ui-icons-upload, .ui-icons-uploading, .uploading, .ui-icons-volume, .ui-icons-zoom-in, .ui-icons-zoom-out, .sprite {
+  background: url('ui-icons-se15f0ef076.png') no-repeat;
 }
 
-.ui-icons-anchor-1 {
-  background-position: 0 -1740px;
+.ui-icons-arrow {
+  background-position: 0 -2412px;
 }
 
-.ui-icons-anchor-2 {
-  background-position: 0 -1523px;
+.ui-icons-camera, .camera {
+  background-position: 0 -1390px;
 }
 
-.ui-icons-chemistry {
-  background-position: 0 -1958px;
+.ui-icons-chat {
+  background-position: 0 -544px;
 }
 
-.ui-icons-chess-1 {
-  background-position: 0 -217px;
+.ui-icons-check {
+  background-position: 0 -2334px;
 }
 
-.ui-icons-chess-2 {
-  background-position: 0 -435px;
+.ui-icons-clip {
+  background-position: 0 -1584px;
 }
 
-.ui-icons-glasses {
-  background-position: 0 -869px;
+.ui-icons-close {
+  background-position: 0 -2308px;
 }
 
-.ui-icons-mic-1 {
-  background-position: 0 -1305px;
+.ui-icons-cloud {
+  background-position: 0 -1556px;
 }
 
-.ui-icons-mic-2 {
-  background-position: 0 -652px;
+.ui-icons-cog {
+  background-position: 0 -690px;
 }
 
-.ui-icons-movie {
+.ui-icons-cyclist {
+  background-position: 0 -786px;
+}
+
+.ui-icons-dots {
+  background-position: 0 -2460px;
+}
+
+.ui-icons-download {
+  background-position: 0 -1192px;
+}
+
+.ui-icons-enter-fullscreen {
+  background-position: 0 -1860px;
+}
+
+.ui-icons-envelope, .envelope {
+  background-position: 0 -1910px;
+}
+
+.ui-icons-exit-fullscreen {
+  background-position: 0 -1772px;
+}
+
+.ui-icons-eye-closed {
+  background-position: 0 -936px;
+}
+
+.ui-icons-eye {
+  background-position: 0 -1276px;
+}
+
+.ui-icons-hamburger {
+  background-position: 0 -2434px;
+}
+
+.ui-icons-heart {
+  background-position: 0 -444px;
+}
+
+.ui-icons-house {
+  background-position: 0 -252px;
+}
+
+.ui-icons-list {
+  background-position: 0 -2360px;
+}
+
+.ui-icons-loading-messages {
+  background-position: 0 -398px;
+}
+
+.ui-icons-lock-open {
+  background-position: 0 -2114px;
+}
+
+.ui-icons-lock-unlocked {
+  background-position: 0 -2164px;
+}
+
+.ui-icons-lock {
+  background-position: 0 -2214px;
+}
+
+.ui-icons-minus {
+  background-position: 0 -2470px;
+}
+
+.ui-icons-mirophone {
+  background-position: 0 -1226px;
+}
+
+.ui-icons-moon-with-clouds {
+  background-position: 0 -100px;
+}
+
+.ui-icons-moon {
   background-position: 0 0;
 }
 
-.ui-icons-pipe, .elem {
-  background-position: 0 -1087px;
+.ui-icons-mute {
+  background-position: 0 -2014px;
+}
+
+.ui-icons-new-chat-message {
+  background-position: 0 -302px;
+}
+
+.ui-icons-new-message {
+  background-position: 0 -1726px;
+}
+
+.ui-icons-next {
+  background-position: 0 -1944px;
+}
+
+.ui-icons-paper-plane {
+  background-position: 0 -836px;
+}
+
+.ui-icons-pause {
+  background-position: 0 -2258px;
+}
+
+.ui-icons-pencil {
+  background-position: 0 -1634px;
+}
+
+.ui-icons-pin {
+  background-position: 0 -590px;
+}
+
+.ui-icons-pins {
+  background-position: 0 -50px;
+}
+
+.ui-icons-plane {
+  background-position: 0 -1008px;
+}
+
+.ui-icons-play {
+  background-position: 0 -2064px;
+}
+
+.ui-icons-plus {
+  background-position: 0 -2386px;
+}
+
+.ui-icons-previous {
+  background-position: 0 -1822px;
+}
+
+.ui-icons-rain {
+  background-position: 0 -886px;
+}
+
+.ui-icons-refresh {
+  background-position: 0 -1428px;
+}
+
+.ui-icons-repeat {
+  background-position: 0 -1982px;
+}
+
+.ui-icons-shuffle {
+  background-position: 0 -1684px;
+}
+
+.ui-icons-snow {
+  background-position: 0 -1058px;
+}
+
+.ui-icons-star {
+  background-position: 0 -494px;
+}
+
+.ui-icons-storm, .storm {
+  background-position: 0 -740px;
+}
+
+.ui-icons-sun-with-clouds {
+  background-position: 0 -348px;
+}
+
+.ui-icons-sun {
+  background-position: 0 -1340px;
+}
+
+.ui-icons-sync {
+  background-position: 0 -1302px;
+}
+
+.ui-icons-thumb-down {
+  background-position: 0 -200px;
+}
+
+.ui-icons-thumb-up {
+  background-position: 0 -150px;
+}
+
+.ui-icons-trash {
+  background-position: 0 -1472px;
+}
+
+.ui-icons-upload {
+  background-position: 0 -1158px;
+}
+
+.ui-icons-uploading, .uploading {
+  background-position: 0 -1522px;
+}
+
+.ui-icons-volume {
+  background-position: 0 -640px;
+}
+
+.ui-icons-zoom-in {
+  background-position: 0 -958px;
+}
+
+.ui-icons-zoom-out {
+  background-position: 0 -1108px;
 }
 
 * {
@@ -418,7 +618,7 @@ table {
 }
 
 body {
-  background: #FFFDEE;
+  background: #F2F1F1;
 }
 
 .removeText, .sprite, .elem {
@@ -462,7 +662,6 @@ body {
 }
 
 .col {
-  width: 35.142857143%;
   padding: 0 2.142857143%;
   text-align: center;
 }
@@ -474,25 +673,56 @@ body {
 }
 
 .col.one {
+  width: 25.714285714%;
   float: left;
+  position: relative;
 }
 
 .col.two {
+  width: 57.1428571%;
   float: right;
 }
 
 .sprite {
-  width: 216;
-  height: 2174;
-  width: 100%;
-  padding-top: 1006.48148%;
+  width: 50;
+  height: 2474;
+  margin: 0 auto;
+  width: 12.5%;
+  padding-top: 618.5%;
   background-size: 100% 100%;
   background-position: 0 Infinity%;
 }
 
 .elem {
-  width: 99.53704%;
-  padding-top: 100%;
-  background-size: 100.46512% 1006.48148%;
-  background-position: 0 55.51583%;
+  float: left;
+  margin-right: 18%;
+  margin-bottom: 20px;
+}
+
+.uploading {
+  width: 32%;
+  padding-top: 21.33333%;
+  background-size: 104.16667% 7731.25%;
+  background-position: 0 62.32596%;
+}
+
+.camera {
+  width: 32%;
+  padding-top: 24%;
+  background-size: 104.16667% 6872.22222%;
+  background-position: 0 57.01395%;
+}
+
+.envelope {
+  width: 32%;
+  padding-top: 21.33333%;
+  background-size: 104.16667% 7731.25%;
+  background-position: 0 78.21458%;
+}
+
+.storm {
+  width: 32%;
+  padding-top: 29.33333%;
+  background-size: 104.16667% 5622.72727%;
+  background-position: 0 30.45267%;
 }
